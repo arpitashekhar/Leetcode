@@ -4,7 +4,7 @@ public class RepeatedSubstring {
         int index = 1, count = 0;
         char c = s.charAt(0);
         while(c != s.charAt(index)) {
-        	index++;
+        		index++;
         }
         System.out.println(index);
         String first = s.substring(0, index);
@@ -13,9 +13,9 @@ public class RepeatedSubstring {
         System.out.println(occurences);
         String substr = s.substring(index);
         while(substr != "" && index != -1) {
-        	substr = s.substring(index);
-        	index = s.indexOf(first);
-        	count++;
+	        	substr = s.substring(index);
+	        	index = s.indexOf(first);
+	        	count++;
         }
         /*if(occurences == 0)
             return false;

@@ -1,16 +1,16 @@
 package linkedLists;
 
 public class IntersectingNode {
-	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+	public ListNodes getIntersectionNode(ListNodes headA, ListNodes headB) {
         
         int size1 = 1, size2 = 1;
-		ListNode current = headA;
+		ListNodes current = headA;
 		
 		while(current != null && current.next != null) {
 			size1++;
 			current = current.next;
 		}
-		ListNode eol1 = current;
+		ListNodes eol1 = current;
 		current = headB;
 		while(current != null && current.next != null) {
 			size2++;
@@ -21,7 +21,7 @@ public class IntersectingNode {
 			return null;
 		
 		int diff;
-		ListNode longListNode, shortListNode;
+		ListNodes longListNode, shortListNode;
 		if(size1 < size2) {
 			diff = size2 - size1;
 			longListNode = headB;

@@ -5,7 +5,7 @@ Explanation: 342 + 465 = 807*/
 
 class ListNode {
     int val;
-    ListNode next;
+    ListNodes next;
     ListNode(int x) { 
       val = x; 
       next = null;
@@ -13,9 +13,9 @@ class ListNode {
 }
 
 public class AddLinkLists {
-	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+	public ListNodes addTwoNumbers(ListNodes l1, ListNodes l2) {
         
-        ListNode result = null, temp = null, prev = null;
+        ListNodes result = null, temp = null, prev = null;
         int sum, carry = 0;
         
         while(l1 != null || l2 != null) {
@@ -23,7 +23,7 @@ public class AddLinkLists {
             carry = (sum >= 10) ? 1 : 0;
             sum = sum % 10;
             
-            temp = new ListNode(sum);
+            temp = new ListNodes(sum);
             
             if(result == null) {
                 result = temp;
@@ -37,7 +37,7 @@ public class AddLinkLists {
         }
         
         if(carry > 0) {
-            temp = new ListNode(carry);
+            temp = new ListNodes(carry);
 			prev.next = temp;
         }
         

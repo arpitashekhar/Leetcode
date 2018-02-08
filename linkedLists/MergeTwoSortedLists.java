@@ -1,9 +1,9 @@
 package linkedLists;
 
 public class MergeTwoSortedLists {
-	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode node = new ListNode(0);
-        ListNode head = node;
+	public ListNodes mergeTwoLists(ListNodes l1, ListNodes l2) {
+        ListNodes node = new ListNodes(0);
+        ListNodes head = node;
         if(l1 == null)
             return l2;
         if(l2 == null)
